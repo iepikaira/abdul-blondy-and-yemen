@@ -1,1 +1,137 @@
+<!doctype html>
+<!DOCTYPE html>
 
+<html lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ο Σουλτάνος, ο Ξανθός και τα Διόδια της Υεμένης</title>
+<style>
+:root{--paper:#f4e7be;--ink:#18130e;--red:#a52c19;--yellow:#f0c84b;--blue:#294f67;--panel:#fff8dc;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 2px 2px,rgba(20,15,5,.17) 1.2px,transparent 1.5px) 0 0/9px 9px,var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55;}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(120,75,20,.07),transparent 15%,transparent 85%,rgba(120,75,20,.08));mix-blend-mode:multiply;}
+.wrap{max-width:1200px;margin:auto;padding:24px 18px 56px}
+.hero{position:relative;background:var(--panel);border:6px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:22px 22px 28px;transform:rotate(-.4deg);overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 4px,rgba(0,0,0,.035) 4px 5px);pointer-events:none}
+.kicker{display:inline-block;background:var(--red);color:#fff;letter-spacing:.11em;text-transform:uppercase;font-weight:900;padding:4px 10px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transform:rotate(-2deg)}
+h1{font-family:Impact,'Arial Black',sans-serif;letter-spacing:.02em;font-size:clamp(2.3rem,6vw,5.7rem);line-height:.9;margin:14px 0 10px;text-transform:uppercase;text-shadow:3px 3px 0 #fff0a5,6px 6px 0 rgba(0,0,0,.14)}
+.subtitle{font-size:clamp(1rem,2vw,1.25rem);font-style:italic;max-width:900px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}
+button{font:inherit;font-weight:900;border:3px solid var(--ink);background:var(--yellow);padding:10px 14px;box-shadow:4px 4px 0 var(--ink);cursor:pointer}
+button:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.comic-frame{margin:26px auto 32px;background:#16110d;padding:14px;border:5px solid #000;box-shadow:12px 12px 0 rgba(0,0,0,.35);max-width:1150px;transform:rotate(.4deg)}
+.comic-frame img{display:block;width:100%;height:auto;border:4px solid #000;background:#ddd}
+.caption{background:var(--yellow);border:4px solid var(--ink);padding:9px 12px;margin-top:10px;font-family:Impact,'Arial Black',sans-serif;letter-spacing:.03em;text-transform:uppercase;font-size:1.1rem;transform:rotate(-.7deg)}
+.section{margin:28px 0 0;background:rgba(255,248,220,.84);border:4px solid var(--ink);padding:20px;box-shadow:8px 8px 0 rgba(0,0,0,.14)}
+.section h2{font-family:Impact,'Arial Black',sans-serif;font-size:2rem;margin:0 0 12px;color:var(--red);text-transform:uppercase;border-bottom:3px dashed var(--ink);padding-bottom:7px}
+.scene{margin:20px 0 0;page-break-inside:avoid}
+.scene h3{display:inline-block;background:#111;color:#fff;padding:8px 12px;border:3px solid var(--ink);font-family:Impact,'Arial Black',sans-serif;letter-spacing:.03em;margin:0 0 14px;transform:skew(-2deg)}
+.dialogue{display:grid;grid-template-columns:minmax(140px,180px) 1fr;gap:10px;margin:11px 0;padding:11px 13px;background:#fffdf0;border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(0,0,0,.15);position:relative}
+.dialogue:before{content:"";position:absolute;left:-10px;top:15px;width:15px;height:15px;background:#fffdf0;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.speaker{font-family:Impact,'Arial Black',sans-serif;letter-spacing:.03em;text-transform:uppercase;font-size:1.04rem}
+.speaker.prince{color:#8d2316} .speaker.secretary{color:#31506a} .speaker.trump{color:#6d5314} .speaker.sary{color:#3e4a37} .speaker.stage{color:#5a4f44}
+.line{font-size:1.04rem}
+.punchline{background:#fff0a5;transform:rotate(-.35deg);border-width:4px}
+.end-note{background:#d9e8d0;border:4px solid var(--ink);padding:15px 16px;font-weight:700;font-style:italic;box-shadow:6px 6px 0 rgba(0,0,0,.12)}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.card{border:4px solid var(--ink);background:#f9e7c5;padding:14px;box-shadow:6px 6px 0 rgba(0,0,0,.15)}
+.card strong{font-family:Impact,'Arial Black',sans-serif;font-size:1.2rem}
+.footer{margin-top:34px;text-align:center;font-family:Impact,'Arial Black',sans-serif;letter-spacing:.08em;font-size:1.25rem}
+.small{font-size:.9rem;opacity:.82}
+@media(max-width:800px){.dialogue{grid-template-columns:1fr}.dialogue:before{display:none}.info-grid{grid-template-columns:1fr}.wrap{padding:14px 10px 40px}.section{padding:14px}}
+@media print{body{background:#fff}.toolbar{display:none}.hero,.section,.comic-frame,.dialogue{box-shadow:none}.wrap{max-width:none}.comic-frame{break-inside:avoid}}
+
+.inline-comic{margin:24px 0 28px;padding:10px;background:#fff8dc;border:5px solid var(--ink);box-shadow:8px 8px 0 rgba(0,0,0,.18);transform:rotate(-.35deg);}
+.inline-comic:nth-of-type(even){transform:rotate(.35deg);}
+.inline-comic img{display:block;width:100%;height:auto;border:3px solid var(--ink);}
+.inline-comic figcaption{margin-top:8px;text-align:center;font-family:Impact,'Arial Black',sans-serif;letter-spacing:.04em;font-size:.95rem;}
+@media(max-width:800px){.inline-comic{margin:18px 0 22px;padding:7px;box-shadow:5px 5px 0 rgba(0,0,0,.18);}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<span class="kicker">Γεωπολιτική Επιθεώρηση</span>
+<h1>Ο Αμπντούλ,<br/>ο Ξανθός<br/>και τα Διόδια της Υεμένης</h1>
+<div class="subtitle">Μια «turbo» σατιρική ιστορία με πανικό, χρυσά Rolex, μιλκσέικ, POS και άφθονο παλιό ελληνικό κινηματογραφικό κλίμα.</div>
+<div class="toolbar">
+<button onclick="window.print()">🖨 Εκτύπωση / PDF</button>
+<button onclick="document.body.classList.toggle('large')">🔎 Μεγάλα γράμματα</button>
+<button onclick="document.getElementById('script').scrollIntoView()">🎬 Πήγαινε στο σενάριο</button>
+</div>
+</header>
+
+<section class="section">
+<h2>Ταυτότητα τεύχους</h2>
+<div class="info-grid">
+<div class="card"><strong>Σκηνικό</strong><br/>Ριάντ, Σεπτέμβριος 2026 • ολόχρυσο παλάτι • πανικός σε εικονογραφική υπερβολή.</div>
+<div class="card"><strong>Ύφος</strong><br/>Παλιό ελληνικό κόμικ, επιθεώρηση, slapstick, exaggerated reactions και «ατάκα-καρφί».</div>
+<div class="card"><strong>Κεντρικό gag</strong><br/>Ο έλεγχος της Πύλης των Δακρύων μετατρέπεται σε... σταθμό διοδίων με POS και E-Pass.</div>
+</div>
+</section>
+<section class="section" id="script">
+<h2>Πλήρες σενάριο</h2>
+<div class="scene">
+<div>
+<p><strong>Ριάντ, Σεπτέμβριος 2026.</strong> Το χλιδάτο, ολόχρυσο γραφείο του Πρίγκιπα (MbS). Στους τοίχους κρέμονται πανάκριβοι πίνακες, αλλά ένας έχει πέσει γιατί μόλις έσκασε πύραυλος δυο στενά παρακάτω. Ο Πρίγκιπας (MbS) πηγαινοέρχεται νευρικά, φορώντας την κελεμπία του στραβά, και ρίχνει μανιωδώς χρυσά Rolex μέσα σε έναν σάκο Louis Vuitton. Μαζί του, ο έμπιστος γραμματέας του, ο Αμπντούλ-Θανάσης, που κρατάει ένα χρυσό ξεσκονόπανο χωρίς κανένα λόγο.</p>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 1 — ΤΟ ΧΡΥΣΟ ΤΗΛΕΦΩΝΟ" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPCUYbw0do2zdDPf2qnDsS5J5_Uitfh_4GcyXh4LhQ_TuyfnvZS_xABZzi6U3U9x9dyWy_nEZYqW9F_r30gg6LO0TexPQp0VTD55GgtCefMIy3qsqhohxaCykzLVdsGY4wgEyoG17VJnmIBhyphenhypheniNL_1QBBi4W4frNlNPrIwS81G8jfivBnoJZETbCchltab/s1600/1.jpeg"/><figcaption>ΕΙΚΟΝΑ 1 — ΤΟ ΧΡΥΣΟ ΤΗΛΕΦΩΝΟ</figcaption></figure><h3>🎬 ΣΚΗΝΗ 1 — ΤΟ ΧΡΥΣΟ ΤΗΛΕΦΩΝΟ</h3>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Με φωνή που σπάει) Έλα Τελ Αβίβ! Μπένι, ακούς; Μπένι, αδερφούλη μου, σώσε με! Στείλε στρατό! Στείλε το Iron Dome! Τι εννοείς το δώσατε αντιπαροχή; Τότε στείλε... στείλε τη Μοσάντ, στείλε την Ντάνα Ιντερνάσιοναλ, κάποιους! Πώς «ποια νησιά»; Τα νησιά μας στο Περίμ! Τα πήραν οι ξυπόλυτοι, Μπένι! Γεμάτη high-tech όπλα τους την αφήσαμε τη βάση! Σαν να μπήκαν σε Black Friday στο ΙΚΕΑ, έτοιμα συναρμολογημένα τα βρήκαν τα αντιαεροπορικά! (Κοιτάζει το ακουστικό) Μου το έκλεισε! Μου έβαλε αναμονή μουσική του Ισραηλινού στρατού!</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">(Τρέχοντας με έναν δίσκο) Ο καφές σας, Πολυχρονεμένε μου. Σας έριξα μέσα και δυο Lexotanil τριμμένα, να κατέβει το γεωπολιτικό φαρμάκι.</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Πετάει τον καφέ) Τι καφέ να πιώ, ρε Αμπντούλ; Μου 'ρθε ο Ουρανός σφοντύλι! 25 χρόνια από την 11η Σεπτεμβρίου και γίναμε το μεγαλύτερο ανέκδοτο της Ανατολής! Πού είναι τα Αμερικανάκια μας; Πού είναι ο 6ος Στόλος;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Ε... ο 6ος Στόλος έβαλε όπισθεν, Υψηλότατε. Μόλις είδαν τους υπερηχητικούς πυραύλους "Made in Yemen", ακούστηκε το «μπιπ-μπιπ» της όπισθεν του αεροπλανοφόρου μέχρι την Κρήτη! Μας έστειλαν όμως έναν αντιπρόσωπο.</div></div>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 2 — DRIVE-THROUGH SURRENDER" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3fNj2U7JYjRiUXDJbKvdJqFYzvIpjpAPon6qZm-rpOZ4bG6KN1iRPRkJy_7UVa04PtkCEK9JhyphenhyphenrA4WKpgHzXi_Yi6hKKgCqcXQrJ921V4GlLdqUfafc1wZXWKv7DeEiIiFH2XA2Xo3qXfLvNxMsTzhLeFfcJC2VqIjZbw24ohSHxmssssVMKXtrt5ayuM/s1600/2.jpeg"/><figcaption>ΕΙΚΟΝΑ 2 — DRIVE-THROUGH SURRENDER</figcaption></figure><h3>🎬 ΣΚΗΝΗ 2 — DRIVE-THROUGH SURRENDER</h3>
+<div class="dialogue"><div class="speaker stage">ΣΚΗΝΙΚΗ ΟΔΗΓΙΑ:</div><div class="line">Η πόρτα ανοίγει με κλωτσιά. Μπαίνει ο Ντόναλντ Τραμπ. Φοράει καπελάκι MAGA, κρατάει ένα χαρτί «MEMORANDUM OF SURRENDER» και ρουφάει ένα τεράστιο μιλκσέικ.</div></div>
+<div class="dialogue"><div class="speaker trump">ΝΤΟΝΑΛΝΤ (ΤΡΑΜΠ):</div><div class="line">(Κάνοντας χειρονομίες σαν ακορντεόν) Υπέροχη μέρα. The most beautiful day! Πολλοί λένε ότι αυτή είναι η πιο τέλεια, η πιο σέξι συνθηκολόγηση στην ιστορία του σύμπαντος. Ο "Sleepy Joe" στο Αφγανιστάν έκανε μέρες να χάσει. Άσχετος. Εγώ; Εγώ έκανα drive-through surrender! Υπέγραψα το Μνημόνιο Παράδοσης σε 24 ώρες! "The Art of the Deal meets the Fact of Defeat!" Would you like fries with your defeat, MbS;</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Τραβάει την κελεμπία του) Τι λες βρε καταστροφή του πλανήτη; Ποια παράδοση; Η δυτική ακτή της Υεμένης έπεσε! Η Ταΐζ έπεσε! Τα F-15 μου, που τα χρυσοπλήρωσα... 200 εκατομμύρια το ένα ρε Ξανθέ, τι κάνουν; Πετάνε χαρταετό την Καθαρά Δευτέρα;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Τα παρατήσαμε στις βάσεις, Υψηλότατε. Είδατε στο TikTok τον Μοχάμεντ αλ-Χούθι, τον ξάδερφο του αρχηγού;</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">Όχι! Γιατί, τι έκανε; Έβγαλε βιντεάκι;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Βιντεάκι; Οδηγούσε ένα από τα δικά μας θωρακισμένα στην απελευθερωμένη Αλ-Τζαράχι. Είχε βάλει φώτα νέον κάτω από τις ερπύστριες, το χέρι έξω απ' το παράθυρο με κομπολόι, έπαιζε τέρμα αραβικό τσιφτετέλι και έκανε παντιλίκια! Και από πίσω ο λαός πετούσε γαρίφαλα! «Afghanistan reloaded» σας λέω, αλλά με μπουζούκια!</div></div>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 3 — Ο ΑΓΩΓΟΣ ΚΑΙ Η ΜΑΥΡΗ ΤΡΥΠΑ" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkjbZKo_X6wCbufMMpvfxQYs1Gf-kz4aydtDryqT_BmMa-t_y63SIOq7497KO-wAkT8J-qqgOH2tbTFwWsYLBvjB6QwjTSOHSMlCdd0ZZcQ-bcL-MHEv2xQlw7ZKpSldTAYJkTaiIgl9rAVsq1R76fHtHcEdTSg55lDZvr61WOOwo1jNDclkOCo3dlpw9A/s1600/3.jpeg"/><figcaption>ΕΙΚΟΝΑ 3 — Ο ΑΓΩΓΟΣ ΚΑΙ Η ΜΑΥΡΗ ΤΡΥΠΑ</figcaption></figure><h3>🎬 ΣΚΗΝΗ 3 — Ο ΑΓΩΓΟΣ ΚΑΙ Η ΜΑΥΡΗ ΤΡΥΠΑ</h3>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Σωριάζεται στα γόνατα, χτυπώντας το πάτωμα) Αααα! Καταστραφήκαμε! Θα βγω στους δρόμους με το ντέφι! Και ο αγωγός μας; Ο Abqaiq-to-Yanbu; Η τελευταία μας αρτηρία πετρελαίου; Πες μου ότι ζει!</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Ε, αυτό που λέμε... "Big Bang". Ξέρετε, ο δορυφόρος Sentinel-3 έβγαλε μια πολύ ωραία φωτογραφία από το διάστημα.</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Αναθαρρεί) Φαίνεται ο αγωγός μας;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Φαίνεται μια ωραιότατη μαύρη τρύπα με καπνό ύψους 100 χιλιομέτρων! Στη NASA νομίζανε ότι γεννήθηκε νέος πλανήτης. Η τιμή του πετρελαίου πήγε στον Θεό. Το ευρωπαϊκό λίπασμα αγνοείται. Πλέον στο Παρίσι, το ρύζι δεν το πουλάνε στο σούπερ μάρκετ, το πουλάνε στα κοσμηματοπωλεία του Cartier, με το καράτι!</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">Αχ, η καρδιά μου... Το υπογλώσσιο! (Ο Αμπντούλ του χώνει ένα χάπι στο στόμα). Τουλάχιστον... τουλάχιστον έχουμε τη «Συμμαχία Άμυνας της Μέκκας». Ολόκληρος συνασπισμός βρε αδερφέ. Η Τουρκία! Ε; Το Πακιστάν! Εεε;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Εμ... η Τουρκία έστειλε mail ότι τα drones της «πέφτουν σαν τις μύγες» στην Υεμένη και τώρα τα ψεκάζουν με κατσαριδοκτόνο TEZA μπας και γλιτώσουν. Όσο για το Πακιστάν...</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">Τι έκανε το Πακιστάν; Μας έστειλε στρατό;</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Μας έκανε "seen" στο Viber, Υψηλότατε. Μετά έβγαλε ανακοίνωση ότι η συμμαχία δεν καλύπτει "προϋπάρχουσες παθήσεις". Επειδή ξεκινήσατε τον πόλεμο το 2015, ο ασφαλιστής λέει ότι θεωρείται «χρόνιο νόσημα» και δεν αποζημιώνει!</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Πέφτει ανάσκελα πάνω στο γραφείο) Χρεοκοπήσαμε! Μείναμε με την άμμο στο χέρι! Ούτε πετρέλαιο, ούτε καράβια! Θα πουλάω χουρμάδες στα φανάρια του Ντουμπάι!</div></div>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 4 — Η ΠΥΛΗ ΤΩΝ ΔΑΚΡΥΩΝ ΚΑΙ ΤΑ ΔΙΟΔΙΑ" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEild-38SMbGB5vGL2Vimc2VSJbPb8YqABgk7ehlSl9yrVAhXKcbKd4e258oWfVjKeuMUaqVb6MqSvRwiueADQaa4qASn66Pk_CisURc7oTRGkqCgAbbTqa0ZoSpDlGnNKjHM66KuI0vinuALo2txglYzvxajMTJTuzGrJzzBsmaL99k4dTICtslFkO7Hknx/s1600/4.jpeg"/><figcaption>ΕΙΚΟΝΑ 4 — Η ΠΥΛΗ ΤΩΝ ΔΑΚΡΥΩΝ ΚΑΙ ΤΑ ΔΙΟΔΙΑ</figcaption></figure><h3>🎬 ΣΚΗΝΗ 4 — Η ΠΥΛΗ ΤΩΝ ΔΑΚΡΥΩΝ ΚΑΙ ΤΑ ΔΙΟΔΙΑ</h3>
+<div class="dialogue"><div class="speaker stage">ΣΚΗΝΙΚΗ ΟΔΗΓΙΑ:</div><div class="line">Ξαφνικά, ακούγεται ένας χαρακτηριστικός ήχος «ΝΤΙΝ-ΝΤΟΝ» όπως στα διόδια. Η πόρτα ανοίγει και μπαίνει ο Ταξίαρχος Γιαχία Σαρί, εκπρόσωπος των Ανσαρουλάχ. Είναι άψογα ντυμένος με παραλλαγή, αλλά φοράει από πάνω... ένα γιλέκο εισπράκτορα διοδίων Αττικής Οδού! Κρατάει ένα POS στο ένα χέρι και ένα E-Pass στο άλλο.</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">(Με φωνή εκφωνητή του BBC, απόλυτα ψύχραιμος) Καλησπέρα σας. Συγγνώμη για την καθυστέρηση, είχαμε κίνηση στην «Πύλη των Δακρύων».</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Γουρλώνει τα μάτια, προσπαθεί να κρυφτεί πίσω από τον Τραμπ) Εσύ ποιος είσαι βρε; Πώς πέρασες την ασφάλεια μου;</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">Ταξίαρχος Γιαχία Σαρί. Ήρθα εκ μέρους της Ανσαρουλάχ. Ξέρετε, τώρα που πήραμε τον απόλυτο έλεγχο στο Bab al-Mandab, κάναμε κάποιες δομικές αναβαθμίσεις.</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Τρέμει σαν ψάρι) Τ-τ-τι αναβαθμίσεις;</div></div>
+<div class="dialogue punchline"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">Βάλαμε διόδια.</div></div>
+<div class="dialogue"><div class="speaker trump">ΤΡΑΜΠ:</div><div class="line">(Πετάγεται ενθουσιασμένος, φτύνοντας το μιλκσέικ) Διόδια; Tolls; Φοβερή επιχειρηματική κίνηση! Σας το 'χα πει, real estate στο Bab al-Mandab! Location, location, location!</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">Ακριβώς. Και βάλαμε και κάμερες ταχύτητας. (Γυρνάει στον Πρίγκιπα). Οπότε, ήρθα να σας αφήσω τον λογαριασμό.</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">Μα... μα η Σαουδική Αραβία έχει εξαίρεση, έτσι; Εμείς είμαστε οι από δω! Οι γείτονες! Έχω και εξοχικό εκεί κοντά!</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">Γείτονες ήσασταν όταν βομβαρδίζατε αδιακρίτως. Τώρα, για εσάς δεν έχει εξαίρεση. Ούτε γλάρος σαουδαραβικός δεν θα περνάει την Πύλη των Δακρύων χωρίς το E-Pass της Υεμένης! Αν θέλετε, έχουμε προσφορά: με 10 διελεύσεις τάνκερ, σας κάνουμε δώρο ένα... δικό σας κατασχεμένο F-15!</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Διαβάζει το χαρτί που του δίνει) «Λίστα Σκληρών Απαιτήσεων»; Μα εμείς ξεκινήσαμε πόλεμο το 2015 για να σας διώξουμε, κι εσείς μου ζητάτε ρέστα για τη θάλασσα ΜΟΥ;</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">(Χαμογελάει παγερά) Είχαμε μια συμφωνία, Πολυχρονεμένε. «Αποκλεισμός για αποκλεισμό». Τη σπάσατε τον Ιούλιο χτυπώντας το αεροδρόμιό μας. Ε, τώρα ο λογαριασμός ήρθε σε εσάς. Και ετοιμαστείτε... γιατί στο Μαρίμπ τα κοιτάσματα αερίου μας κλείνουν το μάτι!</div></div>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 5 — ΤΟ DEAL ΤΟΥ ΞΑΝΘΟΥ" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU8rv3UYtrcrPxHyzwxvGKKHaC44r1kspw-SxqIKGYZHQLj87Y_c86a3sE1ie4cJvTF26ccgS8aWhZUM_ZZ-LD3BDie3RHpYjedyjH9HxH1JtajyGnv31WNpDDExv8oBfTN75fxiFF_P7iKaNsglFmUQocVcf0s_3sS7xKoi_dqaSaryDdSpuLBvxq0Zfu/s1600/5.jpeg"/><figcaption>ΕΙΚΟΝΑ 5 — ΤΟ DEAL ΤΟΥ ΞΑΝΘΟΥ</figcaption></figure><h3>🎬 ΣΚΗΝΗ 5 — ΤΟ DEAL ΤΟΥ ΞΑΝΘΟΥ</h3>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Γυρνάει ικετευτικά στον Τραμπ, πιάνοντάς τον από το σακάκι) Ξανθέ! Κάνε κάτι! Δεν είσαι η υπερδύναμη; Δεν είσαι ο βασιλιάς των Deals; Χτύπα τους!</div></div>
+<div class="dialogue"><div class="speaker trump">ΤΡΑΜΠ:</div><div class="line">(Βγάζει το σακάκι του) Σου λέω, υπέγραψα! Τέλειο deal. Μου δώσανε και ένα αναμνηστικό μπρελόκ από τη βάση στο Περίμ. Εγώ πάω να παίξω γκολφ στο Μαρ-α-Λάγκο. (Γυρνάει στον Σαρί) Α, φίλε, μου κάνεις μια επικύρωση το χαρτάκι του πάρκινγκ να μην πληρώνω την έξοδο; Ευχαριστώ! Bye, losers! (Βγαίνει χοροπηδώντας)</div></div>
+<figure class="inline-comic"><img alt="ΕΙΚΟΝΑ 6 — Η ΚΑΤΑΡΡΕΥΣΗ" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKPXEAE4CA2hzDublbngHpye2PUvUklumOBELkELPzLM2vGbfTVLoFG5B-uXXYmXJD3A9Ros7uDgEijKWLlAo8GIsUQLzbkT6bYK8lBSo5hTBa15EAxstiLip758f5s0XlZN9tWwSad8UHzFLAVGZx6ezs1BUv8Ka3MUL7qm2t9e9ZPWTuC9ORoC_5zDV_/s1600/6.jpeg"/><figcaption>ΕΙΚΟΝΑ 6 — Η ΚΑΤΑΡΡΕΥΣΗ</figcaption></figure><h3>🎬 ΣΚΗΝΗ 6 — Η ΚΑΤΑΡΡΕΥΣΗ</h3>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Κοιτάει το ταβάνι, τραβάει την κελεμπία του και σκίζει τα ρούχα του) Η αυτοκρατορία μου! Το παλάτι μου! Έπρεπε να το ξέρω! Μείναμε... τίποτα! Θα πάω στην Πύλη των Δακρύων... να κλάψω!</div></div>
+<div class="dialogue"><div class="speaker sary">ΓΙΑΧΙΑ ΣΑΡΙ:</div><div class="line">(Του χτυπάει το POS πάνω στο γραφείο) Με το καλό. Ανέπαφη κάνετε ή να βάλω το PIN; Δέχομαι και τα χρυσά σας Rolex.</div></div>
+<div class="dialogue"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">Αμπντούλ!!! Φέρε την καμήλα! Φεύγουμε για την έρημο! Γυρνάμε στις σκηνές!</div></div>
+<div class="dialogue"><div class="speaker secretary">ΑΜΠΝΤΟΥΛ-ΘΑΝΑΣΗΣ:</div><div class="line">Να της βάλω V-Power πετρέλαιο, Υψηλότατε;</div></div>
+<div class="dialogue punchline"><div class="speaker prince">ΠΡΙΓΚΙΠΑΣ:</div><div class="line">(Ουρλιάζει) ΜΗΝ ΞΑΝΑΠΕΙΣ ΤΗ ΛΕΞΗ ΠΕΤΡΕΛΑΙΟ! Δώσ' της να φάει τα μνημόνια του Τραμπ!!!</div></div>
+<div class="dialogue"><div class="speaker stage">ΑΥΛΑΙΑ:</div><div class="line">Ο Πρίγκιπας λιποθυμάει, πέφτοντας μέσα στον σάκο με τα ρολόγια. Ο Γιαχία Σαρί βγάζει απόδειξη από το POS με τον χαρακτηριστικό θόρυβο "ζζζζζτ", και ο Αμπντούλ-Θανάσης τον κάνει αέρα με έναν πίνακα αξίας εκατομμυρίων.</div></div>
+<p class="end-note">Κλείνει με μουσική «ζουρνάς-techno» και ρυθμικό ήχο από κέρματα που πέφτουν ασταμάτητα σε κουμπαρά διοδίων.</p>
+</div>
+</div>
+</section>
+<footer class="footer">
+  ΑΥΛΑΙΑ • ΖΟΥΡΝΑΣ-TECHNO • ΓΕΛΙΟ...
+  <div class="small">Οι ατάκες ανήκουν αποκλειστικά στη σελίδα iEpikaira. Αντιγράφετε ελεύθερα...</div>
+</footer>
+</div>
+<style>
+body.large .line{font-size:1.23rem} body.large .dialogue{padding:14px} body.large h1{font-size:clamp(2.7rem,7vw,6.2rem)}
+</style>
+</body>
+</html>
